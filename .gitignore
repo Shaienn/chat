@@ -1,0 +1,28 @@
+# Rebar3
+_build/
+_checkouts/
+rebar.lock
+
+# Erlang
+*.beam
+*.plt
+erl_crash.dump
+rebar3.crashdump
+*.ez
+
+# Common Test
+_build/test/logs/
+ct_run.*
+
+# Editor
+*.swp
+*.swo
+*~
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+

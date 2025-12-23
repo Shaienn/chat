@@ -1,0 +1,20 @@
+{application, chat_server, [
+    {description, "Chat server application"},
+    {vsn, "0.1.0"},
+    {registered, [chat_server, chat_sup, chat_acceptor]},
+    {mod, {chat_server_app, []}},
+    {applications, [
+        kernel,
+        stdlib
+    ]},
+    {env, []},
+    {modules, [
+        chat_server,
+        chat_sup,
+        chat_client,
+        chat_acceptor,
+        chat_connection,
+        chat_connection_sup
+    ]}
+]}.
+
